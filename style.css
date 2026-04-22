@@ -27,7 +27,7 @@ h1{
 }
 .subheader{
     font-size: 36px;
-    margin: 16px 0; 24px 0;
+    margin: 16px 0 24px 0;
 }
 button{
     background-color: #05c7cf;
@@ -65,7 +65,7 @@ li{
 #discord,
 #contact,
 footer{
-    padding: 48px; 0;
+    padding: 48px 0;
 }
 
 /*
@@ -75,6 +75,7 @@ About
 */
 
 #about{
+    padding: 48px 24px;
     background-color: #f8ffdc;
 }
 h2{
@@ -87,15 +88,15 @@ h2{
     justify-content: center;
     align-items: center;
 }
-.about__image--wrapper{
-    width: 40%;
+.about__img--wrapper{
+    width: 50%;
     padding: 0 24px;
 }
 img{
-    100%;
+    width: 100%;
 }
 .section__description--wrapper{
-    width: 60%;
+    width: 50%;
     padding: 0 24px;
 }
 .section__description--para{
@@ -127,7 +128,7 @@ form{
     margin: 0 auto;
 }
 input, textarea{
-    padding: 6px; 12px;
+    padding: 6px 12px;
     margin-bottom: 24px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -153,4 +154,21 @@ footer{
 }
 .footer__link{
     padding: 0 16px;
+}
+/* Small phones, tablets, large smartphones */
+@media(max-width: 768px){
+    .row{
+        flex-direction: column;
+    }
+    .about__img--wrapper{
+        width: 100%;
+    }
+    .section__description--wrapper{
+        width: 100%;
+    }
+    .home__description{
+        margin-bottom: 24px;
+    }
+    
+
 }
